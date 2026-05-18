@@ -1,0 +1,46 @@
+{
+  "name": "intelligent-audit-trail",
+  "version": "1.0.0",
+  "description": "Intelligent Audit Trail using Isolation Forest for Next.js Server Actions",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.ts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc",
+    "test": "vitest"
+  },
+  "keywords": [
+    "audit-trail",
+    "nextjs",
+    "server-actions",
+    "isolation-forest",
+    "anomaly-detection"
+  ],
+  "author": "Savero Madajaya",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
+  },
+  "dependencies": {
+    "isolation-forest": "^0.0.9"
+  }
+}
